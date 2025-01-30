@@ -1,4 +1,4 @@
-public class BillDominos
+public class DominosBill
 {
 	public static void main(String[] args) 
 	{
