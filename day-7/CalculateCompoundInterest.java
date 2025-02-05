@@ -21,15 +21,14 @@
 		 System.out.print("Enter year wise value :");
 		 double year = sc.nextDouble();
 		 
-		 double amount = principle*Math.pow((1+rate/100), year);
- //	    double amount = (principle*rate*year)/100;
+		// double amount = principle*Math.pow((1+rate/100), year);
+  double amount = (principle*rate*year)/100;
  
 		 
 		 System.out.print("The interest is :"+amount);
 		 
 		 
 		 sc.close();
-		 
 		 
 		 
  
