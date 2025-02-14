@@ -1,9 +1,12 @@
-public class Test 
-	{
-    public static void main(String[] args) 
-		{
-        int number = 78963;
-        int lastDigit = number % 10;
-        System.out.println(lastDigit); 
+import java.util.Scanner;
+class Test 
+{
+     static{
+        System.out.println("hello");
     }
+
+    public static void main(String[] args) {
+        
+    }
+
 }

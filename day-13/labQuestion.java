@@ -1,3 +1,5 @@
+   // scanner class
+
 // Read the class notes and develop the programs.
 // Program 01:
 // -----------
