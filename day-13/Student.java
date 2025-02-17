@@ -54,7 +54,7 @@ public class Student {
         System.out.println("Student fees is : "+ studentFees);
         System.out.println("Student Submit fees  : "+ studentSubmitFees);
 
-        System.out.println( "     ___________________________  ");
+        System.out.println( " _________________________________________  ");
 
     }
 }
