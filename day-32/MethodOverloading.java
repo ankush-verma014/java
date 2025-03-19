@@ -173,137 +173,123 @@
 
 // public class Payment
 // {
-// 	public void makePayment(double amount)
-// 	{
-// 		if(this.validateAmount(amount)) {
-			
-// 			System.out.println("Processing payment via Cash...");
-// 			System.out.println("Amount Paid RS :"+amount);
-// 			System.out.println("Payment Successful!");
-			
-// 		}else {
-// 			System.out.println("Error: Amount must be greater than zero.");
-// 		}
-// 	}
-	
-// 	public void makePayment(String cardHolderName, String creditCardNumber,double amount)
-// 	{
-// 		if(this.validateCardNumber(creditCardNumber) && validateAmount(amount))
-// 		{
-// 			System.out.println("  Processing payment via Credit Card...");
-// 			System.out.println("Card Holder: "+cardHolderName);
-// 			System.out.println("card Number: "+maskCardNumber(creditCardNumber));
-// 			System.out.println("Amount Paid RS : "+amount);
-// 			System.out.println("Payment Successful!");
-// 		}
-// 		else
-// 		{
-// 			System.out.println(" Error: Invalid card number. It must be 16 digits.");
-// 		}
-// 	}
-	
-// 	public void makePayment(String debitCardNumber, double amount)
-// 	{
-// 		if(this.validateCardNumber(debitCardNumber) && validateAmount(amount))
-// 		{
-// 			System.out.println(" Processing payment via Debit Card...");
-// 			System.out.println("Card Number: "+maskCardNumber(debitCardNumber));
-// 			System.out.println("Amount Paid RS : "+amount);
-// 			System.out.println("Payment Successful!");
+//    //making a payment through cash
+// public void makePayment(double amount)
+// {
+//     if(validateAmount(amount))
+//     {
+//         System.out.println("Processing payment via Cash...");
+//         System.out.println("Amount Paid RS :"+amount);
+//         System.out.println("Payment Successful!");
+//     }
+// }
 
+// //making a payment through credit card
 
-// 		}
-// 		else
-// 		{
-// 			System.out.println(" Error: Invalid card number. It must be 16 digits.");
+// public void makePayment(String cardHolderName, String creditCardNumber,double amount)
+// {
+//     if(validateCardNumber(creditCardNumber) && validateAmount(amount))
+//     {
+//         System.out.println("Processing payment via Credit Card...");
+//         System.out.println("Card Holder :"+cardHolderName);
+//         System.out.println("Card Number :"+maskCardNumber(creditCardNumber));
+//         System.out.println("Amount Paid RS :"+amount);
+//         System.out.println("Payment Successful!");
+//     }
+// }
 
-// 		}
-// 	}
-	
-// 	private boolean validateAmount(double amount)
-// 	{
-// 		if(amount <=0)
-// 		{
-// 			return false;
-// 		}
-// 		else 
-// 		{
-// 			return true;
-// 		}
-// 	}
-	
-// 	private boolean validateCardNumber(String cardNumber)
-// 	{
-// 		if(cardNumber.length()==16)
-// 		{
-			
-// 			return true;
-// 		}
-// 		else 
-// 		{
-// 			return false;
-// 		}
-// 	}
+// //making a payment through debit card
+// public void makePayment(String debitCardNumber, double amount)
+// {
+//     if(validateCardNumber(debitCardNumber) && validateAmount(amount))
+//     {
+//         System.out.println("Processing payment via Debit Card...");
+//         System.out.println("Card Number :"+maskCardNumber(debitCardNumber));
+//         System.out.println("Amount Paid RS :"+amount);
+//         System.out.println("Payment Successful!");
+//     }
+// }
 
-// 	private String maskCardNumber(String cardNumber)
-// 	{
-// 		return "xxxx xxxx xxxx "+cardNumber.substring(cardNumber.length()-4);
-// 	}
+// //Helper method
+// private boolean validateAmount(double amount)
+// {
+//     if(amount <= 0)
+//     {
+//         System.err.println("Error: Amount must be greater than zero.");
+//         return false;
+//     }
+//     return true;
+// }
+
+// private boolean validateCardNumber(String cardNumber)
+// {
+//     if(cardNumber.length() !=16)
+//     {
+//         System.err.println("Error: Invalid card number. It must be 16 digits.");
+//         return false;
+//     }
+//     return true;
+// }
+
+// private String maskCardNumber(String cardNumber)
+// {
+//     return "****_****_****_"+cardNumber.substring(12);
+// }
+
 // }
 // ____________
 // package com.ankush.method_overloading;
 
 // import java.util.Scanner;
 
-// public class PaymentProcess 
+// public class PaymentProcess
 // {
+// public static void main(String[] args)
+// {
+// System.out.println("Payment Menu");
+// System.out.println("Please select any one Payment Method from the Menu :");
+// System.out.println("\t\t 1) Payment by using Cash ");
+// System.out.println("\t\t 2) Payment by using Credit Card ");
+// System.out.println("\t\t 3) Payment by using Debit Card ");
 
-// 	public static void main(String[] args) 
-// 	{
-// 		Scanner sc = new Scanner(System.in);
-		
-// 		System.out.println("Payment Menu");
-// 		System.out.println("Please select any one Payment Method from the Menu :");
-// 		System.out.println("\t\t 1) Payment by using Cash ");
-// 		System.out.println("\t\t 2) Payment by using Credit Card ");
-// 		System.out.println("\t\t 3) Payment by using Debit Card ");
-// 		System.out.println("Please enter your Payment choice [1/2/3]");
-// 		int key= sc.nextInt();
-		
-// 		 Payment p= new Payment();
-// 		switch (key) {
-// 		case 1: {
-// 			System.out.println("Enter the amount you want to pay through cash :");
-// 		    double amount = sc.nextDouble();
-// 			p.makePayment(amount);
-// 			break;
-// 		}
-// 		case 2:
-// 			System.out.println("Enter your Name");
-// 			String name = sc.nextLine();
-// 			name = sc.nextLine();
-// 			System.out.println("Enter your 16 digit Credit Card Number :");
-// 			String cardNumber = sc.nextLine();
-// 			System.out.println(" Enter your Payment Amount :");
-// 			 double amount = sc.nextDouble();
-// 			 p.makePayment(name, cardNumber, amount);
-// 			 break;
-			 
-// 		case 3:
-//              System.out.println(" Enter your 16 digit Debit Card Number :");
-//              String cardnumber = sc.nextLine();
-//              cardnumber = sc.nextLine();
-//  			System.out.println("Enter your Payment Amount :");
-//  			double Amount = sc.nextDouble();
- 			
-//  			p.makePayment(cardnumber, Amount);
-//  			break;
+// Payment payment = new Payment();
+// Scanner sc = new Scanner(System.in);
 
-// 			default :
-// 			{
-// 				System.out.println("Inavlid Choice");
-// 			}
-// 		}
-// 	}
+// System.out.println("Please enter your Payment choice [1/2/3]");
+// int choice = sc.nextInt();
+
+// switch(choice)
+// {
+// case 1:
+// System.out.println("Enter the amount you want to pay through cash :");
+// double amount = sc.nextDouble();
+// payment.makePayment(amount);
+// break;
+
+// case 2:
+// System.out.println("Enter your name :");
+// String name = sc.nextLine();
+// name = sc.nextLine();
+// System.out.println("Enter your 16 digit Credit Card Number :");
+// String creditCard = sc.nextLine();
+
+// System.out.println("Enter your Payment Amount :");
+// amount = sc.nextDouble();
+// payment.makePayment(name, creditCard, amount);
+// break;
+
+// case 3 :
+// System.out.println("Enter your 16 digit Debit Card Number :");
+// String debitCard = sc.nextLine();
+// debitCard = sc.nextLine();
+// System.out.println("Enter your Payment Amount :");
+// amount = sc.nextDouble();
+// payment.makePayment(debitCard, amount);
+// break;
+// }
+
+// sc.close();
 
 // }
+// }
+// Assignment: "Wrapper class MCQ"

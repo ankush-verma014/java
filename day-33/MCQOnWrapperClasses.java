@@ -1,0 +1,207 @@
+// MCQ on Wrapper classes :
+// ------------------------
+// Q1) Which of the following is NOT a wrapper class in Java?
+// a) Integer
+// b) Float
+// c) String
+// d) Boolean
+
+// Ans: c) String
+
+// ------------------------------------------------
+
+// Q2) What is the purpose of wrapper classes in Java?
+// a) To use primitive data types as objects
+// b) To improve performance over primitive data types
+// c) To replace primitive data types completely
+// d) None of the above
+
+// Ans: a) To use primitive data types as objects
+
+// -----------------------------------------------------
+
+// Q3) Which method is used to convert a wrapper object to a primitive type?
+// a) parse()
+// b) valueOf()
+// c) xxxValue() (e.g., intValue(), doubleValue())
+// d) toPrimitive()
+
+// Ans: c) xxxValue() (e.g., intValue(), doubleValue())
+// ----------------------------------------------------------
+
+
+// Q4) Which of the following is the correct way to create an Integer object?
+// a) Integer i = new Integer(10);
+// b) Integer i = Integer.valueOf(10);
+// c) Integer i = 10;
+// d) All of the above
+
+// Ans: d) All of the above
+// -------------------------------------------------------------
+
+
+// Q5) What will be the output of the following code?
+//     Integer a = 100;
+//     Integer b = 100;
+//     System.out.println(a == b);
+
+// a) true
+// b) false
+// c) Compilation error
+// d) Runtime exception
+
+// Ans:  a) true
+// -----------------------------------------------------------------
+
+
+// Q6) What will be the output of the following code?
+
+//     Integer a = 200;
+//     Integer b = 200;
+//     System.out.println(a == b);
+// a) true
+// b) false
+// c) Compilation error
+// d) Runtime exception
+
+// Ans: b) false
+
+// -------------------------------------------------------------------------------
+
+// Q7) Which wrapper class does NOT have a parseXXX() method?
+// a) Integer
+// b) Double
+// c) Character
+// d) Float
+
+// Ans: c) Character
+
+// Q8) Autoboxing is the process of converting:
+// a) A wrapper object into a primitive value
+// b) A primitive value into a wrapper object
+// c) A String into a wrapper object
+// d) None of the above
+
+// Ans: b) A primitive value into a wrapper object
+// ------------------------------------------
+
+// Q9) Autoboxing is the process of converting:
+// a) A wrapper object into a primitive value
+// b) A primitive value into a wrapper object
+// c) A String into a wrapper object
+// d) None of the above
+
+// Ans:  b) A primitive value into a wrapper object
+// ------------------------------------------------------------
+
+// Q10) Which of the following is NOT a method in the Integer class?
+// a) parseInt()
+// b) valueOf()
+// c) toString()
+// d) convert()
+
+// Ans:d) convert()
+// -------------------------------------------------------------
+
+// Q11) What is the range of Integer values cached by the JVM?
+// a) -128 to 127
+// b) 0 to 255
+// c) -256 to 255
+// d) No caching is done
+
+// Ans: a) -128 to 127
+// -------------------------------------------------------------------
+
+// Q12) Which statement about wrapper classes is FALSE?
+// a) Wrapper classes are immutable
+// b) Wrapper objects can be compared using ==
+// c) valueOf() returns cached instances for some values
+// d) parseXXX() methods convert strings to primitives
+
+// Ans: b) Wrapper objects can be compared using == (this only works for cached values)
+// -----------------------------------------
+
+// Q13) Which of the following statements about autoboxing is TRUE?
+// a) It converts primitive types to their corresponding wrapper class objects automatically
+// b) It converts wrapper objects to primitive types automatically
+// c) It is not supported in Java
+// d) It always improves performance
+
+// Ans: a) It converts primitive types to their corresponding wrapper class objects automatically
+// --------------------------------------------
+
+
+// Q14) Which wrapper class method is used to retrieve the primitive value from an object?
+// a) getValue()
+// b) extract()
+// c) xxxValue() (e.g., intValue(), doubleValue())
+// d) retrieve()
+
+// Ans: c) xxxValue() (e.g., intValue(), doubleValue())
+// -----------------------------------------------------
+
+
+// Q15) Which of the following is NOT a valid way to create a wrapper object?
+// a) Integer i = Integer.valueOf(10);
+// b) Integer i = 10;
+// c) Integer i = new Integer(10);
+// d) Integer i = Integer.parseInt("10");
+
+// Ans: d) Integer i = Integer.parseInt("10");
+// -------------------------------------------------------
+
+
+// Q16) Which of the following wrapper classes does NOT extend Number class?
+// a) Integer
+// b) Double
+// c) Boolean
+// d) Byte
+
+// Ans: c) Boolean
+// --------------------------------------------------------------------
+
+
+// Q17) What is the default value of an Integer wrapper object if declared but not initialized?
+// a) 0
+// b) null
+// c) -1
+// d) Undefined
+
+// Ans: b) null
+// ----------------------------------------------------------------
+
+// Q18) Which of the following statements about autoboxing is FALSE?
+// a) It converts a primitive type to its corresponding wrapper class object
+// b) It is done automatically by the compiler from 1.5V
+// c) It always improves performance
+// d) It helps in using collections with primitive types
+
+// Ans:c) It always improves performance
+// ---------------------------------------------------
+
+
+// Q19) Which of the following wrapper classes extends Number?
+// a) Boolean
+// b) Character
+// c) Integer
+// d) String
+
+// Ans:c) Integer
+// --------------------------------------------
+
+// Q20) What is the output of the following statement
+// public class Test 
+// {
+// 	public static void main(String [] args)
+// 	{
+// 		System.out.println(Character.MAX_RADIX);
+// 	}
+	
+// }
+
+// a) 8
+// b) 10
+// c) 16
+// d) 36
+
+// Ans: d) 36
